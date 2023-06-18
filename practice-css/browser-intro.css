@@ -1,4 +1,4 @@
-p, li{
+p{
 	color: navy;
 }
 
@@ -33,6 +33,7 @@ div#zentai > div {
 div#zentai > div > h2{
 	font-family: cursive;
 	color:#3f3faf;
+	border: none;
 	background: linear-gradient(white, #ffefaf);
 }
 
