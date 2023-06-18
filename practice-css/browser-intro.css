@@ -2,18 +2,14 @@ p, li{
 	color: navy;
 }
 
-head > title{
-	color:white;
-	text-shadow:navy;
-}
-
 p.info {
 	font-size: small;
 	background-color:#dfdfdf;
 }
 
 h1 {
-	background-color: #7f7fcf;
+	color:white;
+	text-shadow:navy;
 }
 
 h2 {
