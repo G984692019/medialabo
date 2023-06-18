@@ -7,9 +7,14 @@ p {
 	color: navy;
 }
 
+title{
+	color:white;
+	text-shadow:navy;
+}
+
 p.info {
-	font-size: samll;
-	color:#dfdfdf;
+	font-size: small;
+	background-color:#dfdfdf;
 }
 
 h1 {
@@ -35,7 +40,8 @@ div#zentai > div {
 }
 
 div#zentai > div > h2{
-	font-family: cursive #3f3faf;
+	font-family: cursive;
+	color:#3f3faf;
 	background: linear-gradient(white, #ffefaf);
 }
 
