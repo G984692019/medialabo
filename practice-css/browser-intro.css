@@ -1,9 +1,15 @@
+head {
+	color:white;
+	text-shadow: navy;
+}
+
 p {
 	color: navy;
 }
 
 p.info {
-	font-size: 10pt;
+	font-size: samll;
+	color:#dfdfdf;
 }
 
 h1 {
@@ -16,12 +22,23 @@ h2 {
 }
 
 div#zentai {
-	display: flex;
-	flex-direction: row;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 200px;
+	grid-gap: 10px;
 	width: 1024px;
 }
 
 div#zentai > div {
-	margin-left: 5px;
+	padding: 5px;
 	background-color: #ffefaf;
+}
+
+div#zentai > div > h2{
+	font-family: cursive #3f3faf;
+	background: linear-gradient(white, #ffefaf);
+}
+
+img{
+	float: right;
 }
