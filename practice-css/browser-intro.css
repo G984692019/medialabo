@@ -1,5 +1,9 @@
-p li{
+p {
 	color: navy;
+}
+
+a:link{
+	color:navy;
 }
 
 p.info {
