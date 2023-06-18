@@ -1,13 +1,8 @@
-head {
-	color:white;
-	text-shadow: navy;
-}
-
 p {
 	color: navy;
 }
 
-title{
+head > title{
 	color:white;
 	text-shadow:navy;
 }
