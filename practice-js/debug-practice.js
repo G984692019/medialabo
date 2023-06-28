@@ -2,11 +2,11 @@ let heikin = 3.5;
 console.log(heikin);        // 正しくは heikin
 
 // (2) 関数名のつづり間違い      → エラー発生
-let h = Math.froor(heikin); // 正しくは floor
+let h = Math.floor(heikin); // 正しくは floor
 
 // (3) 存在しない配列要素       → undefined　（エラーにならない）
 let ary = ['a', 'b', 'c'];
-console.log(ary[3]);        // 3番目の要素は存在しない
+console.log(ary[2]);        // 3番目の要素は存在しない
 
 // (4) 小数のインデックス       → undefined　（エラーにならない）
 let i = 3/2;
