@@ -20,7 +20,7 @@ function hantei() {
   // 課題3-1: 正解判定する
   // kotae と yoso が一致するかどうか調べて結果を出力
   // 課題3-1における出力先はコンソール
-  if(kaisu  < 2){
+  if(kaisu  < 3){
     if(yoso === kotae ){
         console.log("正解です．おめでとう!");
     } else if(yoso < kotae){
@@ -28,7 +28,7 @@ function hantei() {
     } else if(yoso > kotae){
         console.log("まちがい．答えはもっと小さいですよ");
     }
-  }else if(kaisu == 3){
+  }else if(kaisu === 3){
     if(yoso === kotae){
         console.log("正解です．おめでとう!");
     } else if(yoso !== kotae){
