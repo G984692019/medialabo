@@ -1,4 +1,4 @@
-body th tbody{
+body{
     background-color: aqua;
 }
 
@@ -10,6 +10,6 @@ h1 {
     color:brown;
 }
 
-table {
+table tbody{
     border:solid;
 }

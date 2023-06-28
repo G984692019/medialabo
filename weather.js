@@ -3,14 +3,12 @@ let data = {
     "lon": 116.3972,
     "lat": 39.9075
   },
-  "weather": [
-    {
+  "weather": {
       "id": 803,
       "main": "Clouds",
       "description": "曇りがち",
       "icon": "04d"
-    }
-  ],
+    },
   "base": "stations",
   "main": {
     "temp": 9.94,
@@ -46,4 +44,5 @@ let data = {
 };
 
 ////////// 課題3-2 ここからプログラムを書こう
-
+console.log(data.coord.lon);
+console.log(data.coord.lat);
