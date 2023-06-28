@@ -10,11 +10,11 @@ console.log(ary[2]);        // 3番目の要素は存在しない
 
 // (4) 小数のインデックス       → undefined　（エラーにならない）
 let i = 3/2;
-console.log(ary[i]);        // i=3/2=1.5 なので ary[1.5] を参照しようとする
+console.log(Math.floor(ary[i]));        // i=3/2=1.5 なので ary[1.5] を参照しようとする
 
 // (5) メンバー名の間違い       → undefined （エラーにならない）
 let obj = {x:3, y:7};
-console.log(obj.z);         // メンバー z は存在しない
+console.log(obj.x);         // メンバー z は存在しない
 
 // (6) 初期化していない変数のメンバー   → エラー発生
 let o;
