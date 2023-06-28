@@ -18,7 +18,7 @@ let gakka = [
 
 console.log(campus.address);
 
-for(const D of buildingD){
+for(const D of campus.buildingD){
 	console.log(D);
 }
 
