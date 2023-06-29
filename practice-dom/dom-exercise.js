@@ -19,6 +19,7 @@ let h2 = document.querySelector('h2#ex42');
 
 let p2 = document.createElement('p');
 p2.textContent = '写真表と都市の緯度経度のページです';
+p2.style.textEmphasis ='sesame green';
 
 h2.insertAdjacentElement('afterend', p2);
 // 練習4-3 写真表作成プログラム
