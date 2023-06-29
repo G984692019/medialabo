@@ -42,7 +42,11 @@ for(let count of w){
 let h5 = document.querySelector('ul#location');
 
 for(let list of data){
-	let li = document.createElement(data.name + ' ... 緯度:' + data.lat + ', 経度:' + data.lng);
+	let name = data[list].name;
+	let ido = data[list].lat;
+	let keido = data[list].lat;
+
+	let li = document.createElement(name + ' ... 緯度:' + ido + ', 経度:' + keido);
 
 	h5.insertAdjacentElement('beforeend', li);
 }
