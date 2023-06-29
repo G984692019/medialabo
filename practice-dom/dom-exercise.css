@@ -5,6 +5,10 @@ div#phototable {
     width: 400px;
 }
 
+h2 > p{
+	text-emphasis: sesame green;
+}
+
 div#phototable > p {
 	border: 1px solid #efefef;
 	
