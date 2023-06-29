@@ -27,8 +27,23 @@ p2.style.textEmphasis='sesame green';
 
 let h3 = document.querySelector('div#phototable');
 
-let img1 = document.createElement('a');
-img1. setAttribute('href', 'taro.png');
+let img1 = document.createElement('img');
+img1. setAttribute('src', 'taro.png');
+let p10 = document.createElement('p');
+p10.insertAdjacentElement('beforeend', img1);
+h3.insertAdjacentElement('beforeend', p10);
+
+let img2 = document.createElement('img');
+img2. setAttribute('src', 'jiro.png');
+let p20 = document.createElement('p');
+p20.insertAdjacentElement('beforeend', img2);
+h3.insertAdjacentElement('beforeend', p20);
+
+let img3 = document.createElement('img');
+img3. setAttribute('src', 'hanako.png');
+let p30 = document.createElement('p');
+p30.insertAdjacentElement('beforeend', img3);
+h3.insertAdjacentElement('beforeend', p30);
 
 // 練習4-4 箇条書き削除プログラム
 
@@ -43,7 +58,7 @@ let h5 = document.querySelector('ul#location');
 
 for(let count of data){
 	let li = document.createElement('li');
-	li.textContent=data.name + ' ... 緯度:' + data.lat + ' 経度:' + data.lng;
+	li.textContent=count.name + ' ... 緯度:' + count.lat + ' 経度:' + count.lng;
 
 	h5.insertAdjacentElement('beforeend', li)
 }
