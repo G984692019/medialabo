@@ -17,17 +17,23 @@ let data = [
 
 let h2 = document.querySelector('h2#ex42');
 
-let p = document.createElement('p');
-p.textContent = '写真表と都市の緯度経度のページです'
+let p2 = document.createElement('p');
+p2.textContent = '写真表と都市の緯度経度のページです';
 
-h2.insertAdjacentElement('afterend', p);
+h2.insertAdjacentElement('afterend', p2);
 // 練習4-3 写真表作成プログラム
 
+let h3 = document.querySelector('div#phototable');
+
+let img1 = document.createElement('a');
+img1. setAttribute('href', 'taro.png');
 
 // 練習4-4 箇条書き削除プログラム
 
 let w = document.querySelectorAll('li');
-w.remove();
+for(let count of w){
+	count.remove();
+}
 
 // 練習4-5 箇条書き追加プログラム
 
