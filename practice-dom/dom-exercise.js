@@ -26,6 +26,15 @@ h2.insertAdjacentElement('afterend', p);
 
 // 練習4-4 箇条書き削除プログラム
 
+let w = document.querySelectorAll('li');
+w.remove();
 
 // 練習4-5 箇条書き追加プログラム
 
+let h5 = document.querySelector('ul#location');
+
+for(let list of data){
+	let li = document.createElement(data.name + ' ... 緯度:' + data.lat + ', 経度:' + data.lng);
+
+	h5.insertAdjacentElement('beforeend', li);
+}
