@@ -40,3 +40,9 @@ function hantei() {
     console.log("答えは " + kotae + "でした．すでにゲームは終わっています");
   }
 }
+
+//DOM
+let h1 = document.querySelector('span#kaisu');
+
+let w = document.querySelector('p#result');
+w.remove();
