@@ -33,21 +33,23 @@ function hantei() {
   // 課題3-1: 正解判定する
   // kotae と yoso が一致するかどうか調べて結果を出力
   // 課題3-1における出力先はコンソール
-  if(kaisu  < 3){
-    if(yoso === kotae ){
-        w.textContent = '正解です．おめでとう!';
-    } else if(yoso < kotae){
-        w.textContent = 'まちがい．答えはもっと大きいですよ';
-    } else if(yoso > kotae){
-        w.textContent = 'まちがい．答えはもっと小さいですよ';
-    }
-  }else if(kaisu === 3){
-    if(yoso === kotae){
-      w.textContent = '正解です．おめでとう!';
-    } else if(yoso !== kotae){
-        w.textContent = 'まちがい．残念でした答えは ' + kotae + 'です．';
-    }
+  if(yoso === kotae){
+    w.textContent = '正解です．おめでとう!';
   } else {
-    w.textContent = '答えは ' + kotae + 'でした．すでにゲームは終わっています';
+    if(kaisu < 3){
+      if(yoso < kotae){
+        w.textContent = 'まちがい．答えはもっと大きいですよ';
+      } else if(yoso > kotae){
+        w.textContent = 'まちがい．答えはもっと小さいですよ';
+      }
+    } else if(kaisu === 3){
+      if(yoso === kotae){
+        w.textContent = '正解です．おめでとう!';
+      } else if(yoso !== kotae){
+        w.textContent = 'まちがい．残念でした答えは ' + kotae + 'です．';
+      }
+    } else {
+      w.textContent = '答えは ' + kotae + 'でした．すでにゲームは終わっています';
+    }
   }
 }
