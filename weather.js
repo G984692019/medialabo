@@ -56,4 +56,4 @@ console.log(data.wind.deg);
 
 //DOM
 let w1 = document.querySelector('div#result');
-w1.insertAdjacentElement('beforend', lon);
+w1.insertAdjacentElement('beforend', data);
