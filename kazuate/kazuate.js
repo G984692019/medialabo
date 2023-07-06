@@ -43,6 +43,10 @@ function hantei() {
 
 //DOM
 let h1 = document.querySelector('span#kaisu');
+h1.textContent = kaisu;
+
+let h2 = document.querySelector('span#answer');
+h2.textContent = yoso;
 
 let w = document.querySelector('p#result');
 w.remove();
