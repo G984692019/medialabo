@@ -53,3 +53,7 @@ console.log(data.main.temp_max);
 console.log(data.main.humidity);
 console.log(data.wind.speed);
 console.log(data.wind.deg);
+
+//DOM
+let w1 = document.querySelector('div#result');
+w1.insertAdjacentElement('beforend', lon);
