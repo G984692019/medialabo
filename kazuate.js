@@ -6,7 +6,7 @@ console.log('答え（デバッグ用）: ' + kotae);
 let kaisu = 0;
 
 let w = document.querySelector('p#result');
-w.remove();
+w.textCOntent="";
 
 // 予想を4回実行する
 // 将来以下の hantei(); の4回の呼び出しを全て削除する
