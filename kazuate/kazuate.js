@@ -5,6 +5,9 @@ console.log('答え（デバッグ用）: ' + kotae);
 // 入力回数（予想回数）
 let kaisu = 0;
 
+let w = document.querySelector('p#result');
+w.remove();
+
 // 予想を4回実行する
 // 将来以下の hantei(); の4回の呼び出しを全て削除する
 // 代わりにここでは，ボタンを押したら hantei() を呼び出すイベント処理をする
@@ -17,8 +20,15 @@ function hantei() {
   let i = document.querySelector('input[name="suji"]');
   let nyuryoku = i.ariaValueMax;
   let yoso = Math.floor(nyuryoku);
+
   kaisu = kaisu + 1;
   console.log(kaisu + "回目の予想:" + yoso);
+
+  let h1 = document.querySelector('span#kaisu');
+  h1.textContent = kaisu;
+
+  let h2 = document.querySelector('span#answer');
+  h2.textContent = yoso;
   // 課題3-1: 正解判定する
   // kotae と yoso が一致するかどうか調べて結果を出力
   // 課題3-1における出力先はコンソール
@@ -40,13 +50,3 @@ function hantei() {
     console.log("答えは " + kotae + "でした．すでにゲームは終わっています");
   }
 }
-
-//DOM
-let h1 = document.querySelector('span#kaisu');
-h1.textContent = kaisu;
-
-let h2 = document.querySelector('span#answer');
-h2.textContent = yoso;
-
-let w = document.querySelector('p#result');
-w.remove();
