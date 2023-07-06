@@ -48,5 +48,5 @@ h1.textContent = kaisu;
 let h2 = document.querySelector('span#answer');
 h2.textContent = yoso;
 
-let w = document.querySelector('p#result');
-w.remove();
+let ww = document.querySelector('p#result');
+ww.remove();
