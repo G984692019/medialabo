@@ -31,9 +31,6 @@ function hantei() {
   let h2 = document.querySelector('span#answer');
   h2.textContent = yoso;
 
-  let w = document.querySelector('p#result');
-  w.remove();
-
   // 課題3-1: 正解判定する
   // kotae と yoso が一致するかどうか調べて結果を出力
   // 課題3-1における出力先はコンソール
