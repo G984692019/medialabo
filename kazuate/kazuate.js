@@ -34,19 +34,19 @@ function hantei() {
   // 課題3-1における出力先はコンソール
   if(kaisu  < 3){
     if(yoso === kotae ){
-        console.log("正解です．おめでとう!");
+        w.textContent = '正解です．おめでとう!';
     } else if(yoso < kotae){
-        console.log("まちがい．答えはもっと大きいですよ");
+        w.textContent = 'まちがい．答えはもっと大きいですよ';
     } else if(yoso > kotae){
-        console.log("まちがい．答えはもっと小さいですよ");
+        w.textContent = 'まちがい．答えはもっと小さいですよ';
     }
   }else if(kaisu === 3){
     if(yoso === kotae){
-        console.log("正解です．おめでとう!");
+      w.textContent = '正解です．おめでとう!';
     } else if(yoso !== kotae){
-        console.log("まちがい．残念でした答えは " + kotae + "です．");
+        w.textContent = 'まちがい．残念でした答えは ' + kotae + 'です．';
     }
   } else {
-    console.log("答えは " + kotae + "でした．すでにゲームは終わっています");
+    w.textContent = '答えは ' + kotae + 'でした．すでにゲームは終わっています';
   }
 }
