@@ -12,6 +12,7 @@ h1 {
 }
 
 input#radio{
+    border: solid;
     background-color: grey;
 
 }
