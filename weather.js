@@ -74,6 +74,22 @@ function showResult(resp) {
 
   // data.x を出力
   console.log(data.x);
+
+  //DOM
+  let u1 = document.querySelector('div#result');
+
+  let table = document.createElement('table');
+  let thead = document.createElement('thead');
+  let tbody = document.createElement('tbody');
+
+  table.appendChild(thead);
+  table.appendChild(tbody);
+
+  let row_1 = document.createElement('tr');
+  let heading_1 = document.createElement('th');
+  heading_1.innerHTML = data.name;
+
+  document.getElementById('body').appendChild(table);
 }
 
 function showError(err) {
@@ -94,19 +110,3 @@ console.log(data.main.temp_max);
 console.log(data.main.humidity);
 console.log(data.wind.speed);
 console.log(data.wind.deg);
-
-//DOM
-let u1 = document.querySelector('div#result');
-
-let table = document.createElement('table');
-let thead = document.createElement('thead');
-let tbody = document.createElement('tbody');
-
-table.appendChild(thead);
-table.appendChild(tbody);
-
-let row_1 = document.createElement('tr');
-let heading_1 = document.createElement('th');
-heading_1.innerHTML = data.name;
-
-document.getElementById('body').appendChild(table);
