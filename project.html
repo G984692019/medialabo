@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>プロジェクト課題(世界の都市の天気)</title>
     <link rel="stylesheet" href="project.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     <script src="weather.js" defer></script>
   </head>
   <body>
@@ -11,10 +12,33 @@
     <span id="kensaku">
     <label for="weather">どこの国の天気を調べたいですか？</label>
       <p id="ichiran">
-        <input type="radio" name="country" id="China" >
-        <label for="China">北京市(中国)</label>
+        <input type="radio" name="country" id="360630" >
+        <label for="Egypt">カイロ(メキシコ)</label>
+        <input type="radio" name="country" id="524901" >
+        <label for="Rossiya">モスクワ(ロシア)</label>
+        <input type="radio" name="country" id="993800" >
+        <label for="Affrica">ヨハネスブルク(南アフリカ)</label>
+        <input type="radio" name="country" id="1816670" >
+        <label for="China">北京(中華人民共和国)</label>
+        <input type="radio" name="country" id="1850147" >
+        <label for="Japan">東京(日本)</label>
+        <input type="radio" name="country" id="1880252" >
+        <label for="Singapore">シンガポール(シンガポール)</label>
+        <input type="radio" name="country" id="2147714" >
+        <label for="Sydney">シドニー(オーストラリア)</label>
+        <input type="radio" name="country" id="2643743" >
+        <label for="London">ロンドン(イギリス)</label>
+        <input type="radio" name="country" id="2968815" >
+        <label for="Paris">パリ(フランス)</label>
+        <input type="radio" name="country" id="3451189" >
+        <label for="Brazill">リオデジャネイロ(ブラジル)</label>
+        <input type="radio" name="country" id="5128581" >
+        <label for="Newyork">ニューヨーク(アメリカ)</label>
+        <input type="radio" name="country" id="5368361" >
+        <label for="LosAngeles">ロサンゼルス(アメリカ)</label>
       </p>
     </span>
+    <button id="sendRequest">検索</button>
     <table id="target">
       <th>
           <tr>
