@@ -11,6 +11,11 @@ h1 {
     color:brown;
 }
 
+input#radio{
+    background-color: grey;
+
+}
+
 table {
     border:solid;
 }
