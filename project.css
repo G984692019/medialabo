@@ -11,10 +11,15 @@ h1 {
     color:brown;
 }
 
-span#kensaku p#ichiran{
+p#ichiran{
     border: solid;
     background-color: honeydew;
 
+}
+
+label#weather{
+    border: solid;
+    background-color: honeydew;
 }
 
 table {
