@@ -96,5 +96,17 @@ console.log(data.wind.speed);
 console.log(data.wind.deg);
 
 //DOM
-let w1 = document.querySelector('div#result');
-w1.insertAdjacentElement('beforend', data);
+let u1 = document.querySelector('div#result');
+
+let table = document.createElement('table');
+let thead = document.createElement('thead');
+let tbody = document.createElement('tbody');
+
+table.appendChild(thead);
+table.appendChild(tbody);
+
+let row_1 = document.createElement('tr');
+let heading_1 = document.createElement('th');
+heading_1.innerHTML = data.name;
+
+document.getElementById('body').appendChild(table);
