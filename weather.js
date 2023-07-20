@@ -164,7 +164,7 @@ function showResult(resp) {
   row_9.appendChild(row_9_data_2);
   tbody.appendChild(row_9);
 
-  document.getElementById('body').appendChild(table);
+  document.getElementById('div').appendChild(table);
 }
 
 function showError(err) {
