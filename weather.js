@@ -30,9 +30,6 @@ function showResult(resp) {
   // data をコンソールに出力
   console.log(data);
 
-  // data.x を出力
-  console.log(data.x);
-
   //DOM
 
   let table = document.createElement('table');
