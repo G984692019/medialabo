@@ -24,7 +24,7 @@ function showResult(resp) {
 
   // data が文字列型なら，オブジェクトに変換する
   if (typeof data === 'string') {
-      data = JSON.parse(data, reviver);
+      data = JSON.parse(data);
   }
 
   // data をコンソールに出力
@@ -33,7 +33,7 @@ function showResult(resp) {
   console.log(data.name);
   console.log(data.coord.lon);
   console.log(data.coord.lat);
-  console.log(data.weather.description);
+  console.log(JSON.parse(data.weather.description));
   console.log(data.main.temp_min);
   console.log(data.main.temp_max);
   console.log(data.main.humidity);
