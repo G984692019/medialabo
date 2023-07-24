@@ -131,7 +131,7 @@ function showResult(resp) {
   console.log(data.wind.speed);
   console.log(data.wind.deg);
 
-  table(data);
+  console.table(data);
 
   u1.insertAdjacentElement('beforeend', table);
 }
