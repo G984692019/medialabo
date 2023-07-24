@@ -18,7 +18,7 @@ function sendRequest(){
 let u1 = document.querySelector('div#result');
 
 function showResult(resp) {
-  table.remove();
+  u1.remove();
   // サーバから送られてきたデータを出力
   let data = resp.data;
 
@@ -119,6 +119,8 @@ function showResult(resp) {
   row_9.appendChild(row_9_data_1);
   row_9.appendChild(row_9_data_2);
   tbody.appendChild(row_9);
+
+  console.table(table);
 
   u1.insertAdjacentElement('beforeend', table);
 }
