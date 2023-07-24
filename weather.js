@@ -30,10 +30,10 @@ function showResult(resp) {
   console.log(data);
   let p1 = document.createElement('p');
   p1.textContent = data.name;
-  u1.insertAdjacentElement('afterend', p1);
+  u1.insertAdjacentElement('beforeend', p1);
   let p2 = document.createElement('p');
   p2.taxtContent = data.coord.lon;
-  u1.insertAdjacentElement('afterend', p2);
+  u1.insertAdjacentElement('beforeend', p2);
   console.log(data.coord.lat);
   console.log(data.weather.description[0]);
   console.log(data.main.temp_min);
