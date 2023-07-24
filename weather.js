@@ -18,7 +18,6 @@ function sendRequest(){
 let u1 = document.querySelector('div#result');
 
 function showResult(resp) {
-  u1.remove();
   // サーバから送られてきたデータを出力
   let data = resp.data;
 
