@@ -30,7 +30,7 @@ function showResult(resp) {
   console.log(data);
 
   u1.textContent = data.name;
-  u1.taxtContent = coord.lon;
+  u1.taxtContent = data.coord.lon;
   console.log(data.coord.lat);
   console.log(data.weather.description[0]);
   console.log(data.main.temp_min);
