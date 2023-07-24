@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>プロジェクト課題(世界の都市の天気)</title>
-    <link rel="stylesheet" href="project.css">
-    <script src="weather.js" defer></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="weather.js" defer></script>
   </head>
+
   <body>
     <h1>世界の天気</h1>
     <label id="weather">どこの国の天気を調べたいですか？</label>
@@ -37,6 +38,8 @@
         <label for="LosAngeles">ロサンゼルス(アメリカ)</label>
       </p>
     <button id="sendRequest">検索</button>
-    <div id="result"> </div>
+    <div id="result"> 
+      <link rel="stylesheet" href="project.css">
+    </div>
   </body>
 </html>
