@@ -66,7 +66,7 @@ function showResult(resp) {
  let row_4_data_1 = document.createElement('td');
  row_4_data_1.innerHTML = "天気";
  let row_4_data_2 = document.createElement('td');
- row_4_data_2.innerHTML = data.weather.description;
+ row_4_data_2.innerHTML = String(data.weather.description);
  row_4.appendChild(row_4_data_1);
  row_4.appendChild(row_4_data_2);
  tbody.appendChild(row_4);
