@@ -120,6 +120,17 @@ function showResult(resp) {
   row_9.appendChild(row_9_data_2);
   tbody.appendChild(row_9);
 
+  ////////// 課題3-2 ここからプログラムを書こう
+console.log(data.name);
+console.log(data.coord.lon);
+console.log(data.coord.lat);
+console.log(data.weather.description);
+console.log(data.main.temp_min);
+console.log(data.main.temp_max);
+console.log(data.main.humidity);
+console.log(data.wind.speed);
+console.log(data.wind.deg);
+
   console.table(table);
 
   u1.insertAdjacentElement('beforeend', table);
@@ -133,13 +144,3 @@ function showError(err) {
 function finish() {
   console.log('Ajax 通信が終わりました');
 }
-////////// 課題3-2 ここからプログラムを書こう
-console.log(data.name);
-console.log(data.coord.lon);
-console.log(data.coord.lat);
-console.log(data.weather.description);
-console.log(data.main.temp_min);
-console.log(data.main.temp_max);
-console.log(data.main.humidity);
-console.log(data.wind.speed);
-console.log(data.wind.deg);
