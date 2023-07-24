@@ -29,8 +29,7 @@ function showResult(resp) {
   // data をコンソールに出力
   console.log(data);
   let p1 = document.createElement('p');
-  p1.insertAdjacentElement('beforeend', data.name);
-  u1.insertAdjacentElement('beforeend', p1);
+  u1.textContent = data.name;
   let p2 = document.createElement('p');
   p2.insertAdjacentElement('beforeend', data.coord.lon);
   u1.insertAdjacentElement('beforeend', p2);
