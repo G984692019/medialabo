@@ -25,20 +25,20 @@ function showResult(resp) {
   // data が文字列型なら，オブジェクトに変換する
   if (typeof data === 'string') {
       data = JSON.parse(data);
+  }
 
-    console.log(data.name);
-    console.log(data.coord.lon);
-    console.log(data.coord.lat);
+  // data をコンソールに出力
+  console.log(data);
+
+  console.log(data.name);
+  console.log(data.coord.lon);
+  console.log(data.coord.lat);
   console.log(data.weather.description);
   console.log(data.main.temp_min);
   console.log(data.main.temp_max);
   console.log(data.main.humidity);
   console.log(data.wind.speed);
   console.log(data.wind.deg);
-  }
-
-  // data をコンソールに出力
-  console.log(data);
 }
 
 function showError(err) {
