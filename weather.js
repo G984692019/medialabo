@@ -28,9 +28,10 @@ function showResult(resp) {
 
   // data をコンソールに出力
   console.log(data);
-
-  u1.textContent = data.name;
-  u1.taxtContent = data.coord.lon;
+  let p1 = document.createElement('p');
+  p1.textContent = data.name;
+  let p2 = document.createElement('p');
+  p2.taxtContent = data.coord.lon;
   console.log(data.coord.lat);
   console.log(data.weather.description[0]);
   console.log(data.main.temp_min);
