@@ -15,7 +15,7 @@ function sendRequest(){
   }
 }
 
-let u1 = document.querySelector('div#result');
+let u1 = document.querySelector('span#kensaku-kekka');
 
 function showResult(resp) {
   // サーバから送られてきたデータを出力
