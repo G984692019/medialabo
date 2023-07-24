@@ -24,7 +24,7 @@ function showResult(resp) {
 
   // data が文字列型なら，オブジェクトに変換する
   if (typeof data === 'string') {
-      data = JSON.parse(data);
+      data = JSON.parse(data, reviver);
   }
 
   // data をコンソールに出力
