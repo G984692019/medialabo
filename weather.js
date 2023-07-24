@@ -29,10 +29,10 @@ function showResult(resp) {
   // data をコンソールに出力
   console.log(data);
   let p1 = document.createElement('p');
-  p1.textContent = data.name;
+  p1.insertAdjacentElement('beforeend', data.name);
   u1.insertAdjacentElement('beforeend', p1);
   let p2 = document.createElement('p');
-  p2.taxtContent = data.coord.lon;
+  p2.insertAdjacentElement('beforeend', data.coord.lon);
   u1.insertAdjacentElement('beforeend', p2);
   console.log(data.coord.lat);
   console.log(data.weather.description[0]);
