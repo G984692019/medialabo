@@ -15,8 +15,10 @@ function sendRequest(){
   }
 }
 
+let u1 = document.querySelector('div#result');
+
 function showResult(resp) {
-  result.remove();
+  u1.remove();
   // サーバから送られてきたデータを出力
   let data = resp.data;
 
@@ -32,7 +34,6 @@ function showResult(resp) {
   console.log(data.x);
 
   //DOM
-  let u1 = document.querySelector('div#result');
 
   let table = document.createElement('table');
   let thead = document.createElement('thead');
