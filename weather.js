@@ -29,7 +29,7 @@ function showResult(resp) {
   // data をコンソールに出力
   console.log(data);
 
-  u1.textContent('data.name');
+  u1.textContent = 'data.name';
   console.log(data.coord.lon);
   console.log(data.coord.lat);
   console.log(data.weather.description[0]);
