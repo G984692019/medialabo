@@ -120,7 +120,7 @@ function showResult(resp) {
   row_9.appendChild(row_9_data_2);
   tbody.appendChild(row_9);
 
-  document.getElementById('result').appendChild(table);
+  u1.appendChild(table);
 }
 
 function showError(err) {
