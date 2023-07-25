@@ -31,7 +31,7 @@ function showResult(resp) {
   console.log(data);
   
   if(count !== 0){
-    table.remove();
+    table.refresh();
   }
    //DOM
 
