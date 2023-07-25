@@ -121,7 +121,7 @@ function showResult(resp) {
  console.log(data.name);
  console.log(data.coord.lon);
  console.log(data.coord.lat);
- console.log(data.weather.description);
+ console.log(data.weather['description']);
  console.log(data.main.temp_min);
  console.log(data.main.temp_max);
  console.log(data.main.humidity);
@@ -133,7 +133,11 @@ function showResult(resp) {
     u1.insertAdjacentElement('beforeend', table);
     count++;
   } else {
-    table.replaceWith(table);
+    let oldtable = document.getElementById("kensaku-kekka")
+    let newtable = documnet.createElement("div");
+    newtable.classList.add("newtable");
+
+    oldtable.replaceWith(newtable);
   }
 }
 
