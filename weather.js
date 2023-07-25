@@ -133,11 +133,7 @@ function showResult(resp) {
     u1.insertAdjacentElement('beforeend', table);
     count++;
   } else {
-    let oldtable = document.getElementById("kensaku-kekka")
-    let newtable = documnet.createElement("div");
-    newtable.classList.add("newtable");
-
-    oldtable.replaceWith(newtable);
+    table.reload();
   }
 }
 
