@@ -29,10 +29,7 @@ function showResult(resp) {
 
   // data をコンソールに出力
   console.log(data);
-  
-  if(count !== 0){
-    table.refresh();
-  }
+
    //DOM
 
  let table = document.createElement('table');
@@ -132,9 +129,13 @@ function showResult(resp) {
  console.log(data.wind.deg);
 
  console.table(data);
-
- u1.insertAdjacentElement('beforeend', table);
- count++;
+  if(count === 0){
+    u1.insertAdjacentElement('beforeend', table);
+    count++;
+  } else {
+    table.replaceWith(table);
+    u1.insertAdjacentElement('beforeend', table);
+  }
 }
 
 function showError(err) {
