@@ -134,7 +134,6 @@ function showResult(resp) {
     count++;
   } else {
     table.replaceWith(table);
-    u1.insertAdjacentElement('beforeend', table);
   }
 }
 
