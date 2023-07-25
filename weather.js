@@ -15,6 +15,7 @@ function sendRequest(){
   }
 }
 
+let count = 0;
 let u1 = document.querySelector('span#kensaku-kekka');
 
 function showResult(resp) {
@@ -29,6 +30,9 @@ function showResult(resp) {
   // data をコンソールに出力
   console.log(data);
   
+  if(count !== 0){
+    table.remove();
+  }
    //DOM
 
  let table = document.createElement('table');
@@ -130,6 +134,7 @@ function showResult(resp) {
  console.table(data);
 
  u1.insertAdjacentElement('beforeend', table);
+ count++;
 }
 
 function showError(err) {
