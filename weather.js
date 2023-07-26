@@ -40,7 +40,7 @@ function showResult(resp) {
  console.log(data.name);
  console.log(data.coord.lon);
  console.log(data.coord.lat);
- console.log(data.weather.description);
+ console.log(data.weather[2]);
  console.log(data.main.temp_min);
  console.log(data.main.temp_max);
  console.log(data.main.humidity);
