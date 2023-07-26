@@ -41,7 +41,7 @@ function showResult(resp) {
  console.log(data.coord.lon);
  console.log(data.coord.lat);
  let find = data.weather.find(function(value){
-  return value === 'description'
+  return value == description
  })
  console.log(find);
  console.log(data.main.temp_min);
