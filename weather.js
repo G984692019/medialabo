@@ -108,7 +108,7 @@ let row_8 = document.createElement('tr');
 let row_8_data_1 = document.createElement('td');
 row_8_data_1.innerHTML = "風速";
 let row_8_data_2 = document.createElement('td');
-row_8_data_2.innerHTML = data.wind.gust;
+row_8_data_2.innerHTML = data.wind.speed;
 row_8.appendChild(row_8_data_1);
 row_8.appendChild(row_8_data_2);
 tbody.appendChild(row_8);
