@@ -48,12 +48,6 @@ function showResult(resp) {
  console.log(data.wind.deg);
 
  console.table(data);
-  if(count === 0){
-    u1.insertAdjacentElement('beforeend', table);
-    count++;
-  } else {
-    table.reload();
-  }
 }
 
 function showError(err) {
