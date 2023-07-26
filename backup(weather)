@@ -140,3 +140,11 @@ function showError(err) {
 function finish() {
   console.log('Ajax 通信が終わりました');
 }
+
+
+if(count === 0){
+  u1.insertAdjacentElement('beforeend', table);
+  count++;
+} else {
+  table.reload();
+}
