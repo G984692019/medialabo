@@ -40,7 +40,10 @@ function showResult(resp) {
  console.log(data.name);
  console.log(data.coord.lon);
  console.log(data.coord.lat);
- console.log(data.weather.find(description));
+ let find = data.weather.find(function(value){
+  return value === 'description'
+ })
+ console.log(find);
  console.log(data.main.temp_min);
  console.log(data.main.temp_max);
  console.log(data.main.humidity);
