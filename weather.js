@@ -40,15 +40,23 @@ function showResult(resp) {
  console.log(data.name);
  console.log(data.coord.lon);
  console.log(data.coord.lat);
- let find = data.weather.find(function(value){
-  return value == description
- })
- console.log(find);
+ console.log(data.weather[0].description);
  console.log(data.main.temp_min);
  console.log(data.main.temp_max);
  console.log(data.main.humidity);
  console.log(data.wind.speed);
  console.log(data.wind.deg);
+
+ u1.insertAdjacentElement('beforeend', data.name);
+ u1.insertAdjacentElement('beforeend', data.coord.lon);
+ u1.insertAdjacentElement('beforeend', data.coord.lat);
+ u1.insertAdjacentElement('beforeend', data.weather[0].description)
+ u1.insertAdjacentElement('beforeend', data.main.temp_min);
+ u1.insertAdjacentElement('beforeend', data.main.temp_max);
+ u1.insertAdjacentElement('beforeend', data.main.humidity);
+ u1.insertAdjacentElement('beforeend', data.wind.speed);
+ u1.insertAdjacentElement('beforeend', data.wind.deg);
+
 
  console.table(data);
 }
