@@ -11,6 +11,8 @@
   <body>
     <h1>世界の天気</h1>
     <label id="weather-kensaku">どこの国の天気を調べたいですか？</label>
+    <label id="reload-shite">(※一度検索したらここを押してください)</label>
+    <button onclick="window.location.reload();">リロード</button> 
       <p id="ichiran">
         <input type="radio" name="country" id="360630" >
         <label for="Egypt">カイロ(メキシコ)</label>
@@ -38,7 +40,6 @@
         <label for="LosAngeles">ロサンゼルス(アメリカ)</label>
       </p>
     <button id="sendRequest">検索</button>
-    <button onclick="window.location.reload();">リロード</button> 
     <div id="result">
       <span id="kensaku-kekka"></span>
     </div>
